@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8">
-    <title>Sklep Dropshipping</title>
-  </head>
-  <body>
-    <h1>Witaj w moim sklepie!</h1>
-    <p>Kliknij poniżej, aby złożyć zamówienie:</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdEWlSbitU5DZn1T0nKrsgc_KaHFo5ZYywp7lfhzhpWIcYOOg/viewform?usp=header" target="_blank">
-      <button>Zamów teraz</button>
-    </a>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Sklep Dropshipping</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    input, textarea {
+      display: block;
+      margin-bottom: 15px;
+      width: 100%;
+      max-width: 400px;
+      padding: 10px;
+    }
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Złóż zamówienie</h1>
+
+  <form action="https://ann5923.github.io/Mini-gadgets-shop/" method="POST">
+    <input type="text" name="name" placeholder="Imię i nazwisko" required>
+    <input type="email" name="_replyto" placeholder="Twój email" required>
+    <label>Numer telefonu:</label><br />
+<input type="tel" name="phone" placeholder="Np. 500-600-700" required><br /><br />
+    <textarea name="order" placeholder="Jakie produkty zamawiasz?" required></textarea>
+    <textarea name="address" placeholder="Adres dostawy" required></textarea>
+    <button type="submit">Wyślij zamówienie</button>
+  </form>
+
+</body>
 </html>
